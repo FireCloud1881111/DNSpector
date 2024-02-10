@@ -21,6 +21,9 @@ sudo cp ~/DNSpector/WWW/login.php /var/www/html/
 # Copying the login.php file to /var/www/html
 sudo cp ~/DNSpector/WWW/dashboard.php /var/www/html/
 
+# Adding a database
+sudo mysql -u root -e "CREATE DATABASE IF NOT EXISTS realbanking"
+
 # Import of the "realbanking" database into MySQL
 sudo mysql -u root realbanking < ~/DNSpector/WWW/realbanking.sql
 
