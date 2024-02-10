@@ -21,19 +21,14 @@ sudo cp ~/DNSpector/WWW/login.php /var/www/html/
 # Copying the login.php file to /var/www/html
 sudo cp ~/DNSpector/WWW/dashboard.php /var/www/html/
 
-# Adding a database
+# Execution of commands in MySQL
 sudo mysql -u root -e "CREATE DATABASE IF NOT EXISTS realbanking"
+sudo mysql -u root -e "CREATE USER 'adminwww'@'localhost' IDENTIFIED BY 'Passw0rd2';"
+sudo mysql -u root -e "GRANT ALL PRIVILEGES ON realbanking.* TO 'adminwww'@'localhost';"
+sudo mysql -u root -e "FLUSH PRIVILEGES;"
 
 # Import of the "realbanking" database into MySQL
 sudo mysql -u root realbanking < ~/DNSpector/WWW/realbanking.sql
-
-# Execution of commands in MySQL
-sudo mysql -u root <<EOF
-CREATE USER 'adminwww'@'localhost' IDENTIFIED BY 'Pa$$w0rd2';
-GRANT ALL PRIVILEGES ON realbanking.* TO 'adminwww'@'localhost';
-FLUSH PRIVILEGES;
-exit
-EOF
 
 # Changed DNS address to 10.0.2.10
 sudo sed -i 's/nameserver.*/nameserver 10.0.2.10/' /etc/resolv.conf
