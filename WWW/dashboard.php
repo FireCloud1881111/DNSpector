@@ -28,7 +28,7 @@ if (!isset($_SESSION['user_id'])) {
 // Dane połączenia z bazą danych
 $host = '127.0.0.1'; // Adres serwera bazy danych
 $db_user = 'adminwww'; // Nazwa użytkownika bazy danych
-$db_password = 'Pa$$w0rd2'; // Hasło dostępu do bazy danych
+$db_password = 'Passw0rd2'; // Hasło dostępu do bazy danych
 $db_name = 'realbanking'; // Nazwa bazy danych
 
 // Nawiązanie połączenia z bazą danych
