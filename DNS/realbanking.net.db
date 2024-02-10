@@ -1,0 +1,15 @@
+$TTL    3D
+@       IN      SOA     ns.realbanking.net. admin.realbanking.net. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                          86400 )       ; Negative Cache TTL
+;
+@       IN      NS      ns.realbanking.net.
+@       IN      MX      10 mail.realbanking.net.
+
+www     IN      A       10.0.2.11
+mail    IN      A       10.0.2.12
+ns      IN      A       10.0.2.13
+*.realbanking.net.      IN      A       10.0.2.14
