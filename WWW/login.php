@@ -3,7 +3,7 @@ session_start();
 
 $host = '127.0.0.1'; 
 $db_user = 'adminwww'; 
-$db_password = 'Pa$$w0rd2'; 
+$db_password = 'Passw0rd2'; 
 $db_name = 'realbanking'; 
 
 $conn = new mysqli($host, $db_user, $db_password, $db_name);
