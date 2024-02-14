@@ -2,9 +2,7 @@ options {
         directory "/var/cache/bind";
         dump-file "/var/cache/bind/dump.db";
         dnssec-validation no;
-        #query-source port 33333;
-        #listen-on-v6 { any; };
         listen-on {
-        10.0.2.0/24;
+        10.10.11.0/24;
         };
 };
