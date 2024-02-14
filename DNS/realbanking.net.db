@@ -23,5 +23,3 @@ _sip._tcp.realbanking.net.  86400 IN SRV 10       60     5060 sipserver.realbank
 _imap._tcp.realbanking.net. 86400 IN SRV 10       10     143  mail.realbanking.net.
 
 @               IN      TXT     "google-site-verification=xyz123"
-
-12.11.10.10.in-addr.arpa. IN PTR mail.realbanking.net.
