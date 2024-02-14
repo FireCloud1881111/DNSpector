@@ -1,6 +1,6 @@
 #!/bin/bash
 # Updating
-sudo apt update && sudo apt upgrade -y
+sudo apt update -y
 
 # Bind9 installation
 sudo apt install bind9 -y
