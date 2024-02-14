@@ -14,5 +14,8 @@ sudo cp ~/DNSpector/DNS/named.conf /etc/bind/named.conf
 # Copying a file realbank.net.db
 sudo cp ~/DNSpector/DNS/realbanking.net.db /etc/bind/
 
+# Copying a file 10.10.11.db
+sudo cp ~/DNSpector/DNS/10.10.11.db /etc/bind/
+
 # Checking the operation of the bind9 service
 sudo service bind9 status
