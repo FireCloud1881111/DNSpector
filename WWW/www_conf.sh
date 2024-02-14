@@ -1,7 +1,6 @@
 #!/bin/bash
-
 # Update
-sudo apt update && sudo apt upgrade -y
+sudo apt update -y
 
 # Installation MySQL Server
 sudo apt install mysql-server -y
@@ -35,3 +34,9 @@ sudo service apache2 restart
 
 # Restart MySQL
 sudo service mysql restart
+
+# Checking the operation of the mysql service
+sudo service mysql status
+
+# Checking the operation of the apache2 service
+sudo service apache2 status
