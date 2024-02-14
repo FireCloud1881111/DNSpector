@@ -30,9 +30,6 @@ sudo mysql -u root -e "FLUSH PRIVILEGES;"
 # Import of the "realbanking" database into MySQL
 sudo mysql -u root realbanking < ~/DNSpector/WWW/realbanking.sql
 
-# Changed DNS address to 10.0.2.10
-sudo sed -i 's/nameserver.*/nameserver 10.0.2.10/' /etc/resolv.conf
-
 # Restart Apache2
 sudo service apache2 restart
 
