@@ -9,7 +9,19 @@ $TTL    3D
 @       IN      NS      ns.realbanking.net.
 @       IN      MX      10 mail.realbanking.net.
 
-www     IN      A       10.0.2.11
-mail    IN      A       10.0.2.12
-ns      IN      A       10.0.2.13
-*.realbanking.net.      IN      A       10.0.2.14
+ns      IN      A       10.10.11.10
+www     IN      A       10.10.11.11
+mail    IN      A       10.10.11.12
+
+*.realbanking.net.      IN      A       10.10.11.13
+
+ftp             IN      CNAME   www.realbanking.net.
+
+@               IN      TXT     "v=spf1 ip4:10.10.11.12 ~all"
+
+_sip._tcp.realbanking.net.  86400 IN SRV 10       60     5060 sipserver.realbanking.net.
+_imap._tcp.realbanking.net. 86400 IN SRV 10       10     143  mail.realbanking.net.
+
+@               IN      TXT     "google-site-verification=xyz123"
+
+12.11.10.10.in-addr.arpa. IN PTR mail.realbanking.net.
