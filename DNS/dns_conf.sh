@@ -17,5 +17,8 @@ sudo cp ~/DNSpector/DNS/realbanking.net.db /etc/bind/
 # Copying a file 10.10.11.db
 sudo cp ~/DNSpector/DNS/10.10.11.db /etc/bind/
 
+# Restart the bind9 service
+sudo service bind9 status
+
 # Checking the operation of the bind9 service
 sudo service bind9 status
